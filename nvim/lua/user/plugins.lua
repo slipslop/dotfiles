@@ -23,6 +23,19 @@ use('wbthomason/packer.nvim')
 -- Commenting support.
 use('tpope/vim-commentary')
 
+-- Add more languages
+use('sheerun/vim-polyglot')
+
+-- Jump to the last location when opening a file
+use('farmergreg/vim-lastplace')
+
+use({
+  'windwp/nvim-autopairs',
+  config = function()
+    require('nvim-autopairs').setup()
+  end,
+})
+
 -- Automatically set up your configuration after cloning packer.nvim
 -- Put this at the end after all plugins
 if packer_bootstrap then
