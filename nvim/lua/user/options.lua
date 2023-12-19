@@ -28,11 +28,14 @@ vim.opt.fillchars:append({ eob = ' '}) -- remove the ~~ from end-of-buffer
 vim.opt.splitbelow = true
 vim.opt.splitright = true
 
-vim.opt.scrolloff = 4
-vim.opt.sidescrolloff = 4
+vim.opt.scrolloff = 8
+vim.opt.sidescrolloff = 8
 
 vim.opt.confirm = true
 
 vim.opt.undofile = true
 -- vim.opt.backup = true
 -- vim.opt.backupdir:remove('.') = true -- keep the backups out of the current dir
+vim.opt.clipboard = 'unnamedplus'
+
+vim.cmd.colorscheme("kanagawa")
