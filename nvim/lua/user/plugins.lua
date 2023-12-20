@@ -12,7 +12,12 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-    "rebelot/kanagawa.nvim",
+    {
+        "rebelot/kanagawa.nvim",
+        config = function()
+            vim.cmd.colorscheme("kanagawa")
+        end,
+    },
     "tpope/vim-commentary",
     "sheerun/vim-polyglot",
     "farmergreg/vim-lastplace",
