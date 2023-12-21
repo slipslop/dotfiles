@@ -37,3 +37,6 @@ vim.opt.undofile = true
 -- vim.opt.backup = true
 -- vim.opt.backupdir:remove('.') = true -- keep the backups out of the current dir
 vim.opt.clipboard = 'unnamedplus'
+
+-- vim global
+vim.g.mapleader = " "
