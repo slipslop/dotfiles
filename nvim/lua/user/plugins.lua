@@ -25,5 +25,17 @@ require("lazy").setup({
         'windwp/nvim-autopairs',
         event = "InsertEnter",
         opts = {}
-    }
+    },
+    {
+        "nvim-treesitter/nvim-treesitter",
+        config = function()
+            require("nvim-treesitter.configs").setup({
+                ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "php" },
+                auto_install = true,
+                highlight = {
+                    enable = true,
+                },
+            })
+        end,
+    },
 })
