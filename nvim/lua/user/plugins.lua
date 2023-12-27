@@ -46,6 +46,8 @@ require("lazy").setup({
         dependencies = {
             "nvim-lua/plenary.nvim",
             "BurntSushi/ripgrep",
+            { "nvim-telescope/telescope-fzf-native.nvim", build = "make"},
+            "nvim-tree/nvim-web-devicons",
         },
     },
 })
