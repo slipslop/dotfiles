@@ -40,4 +40,5 @@ require("lazy").setup({
     {
         "nvim-treesitter/nvim-treesitter-textobjects"
     },
+    require("plugins/telescope"),
 })
