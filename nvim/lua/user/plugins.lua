@@ -34,11 +34,17 @@ require("lazy").setup({
     {
         "nvim-treesitter/nvim-treesitter",
         config = function()
-               require("plugins/tree-sitter");
+               require("user/plugins/treesitter");
         end,
     },
     {
         "nvim-treesitter/nvim-treesitter-textobjects"
     },
-    require("plugins/telescope"),
+    {
+        "nvim-telescope/telescope.nvim",
+        tag = "0.1.5",
+        dependencies = {
+            "nvim-lua/plenary.nvim",
+        },
+    },
 })
