@@ -56,7 +56,7 @@ require("lazy").setup({
             "nvim-tree/nvim-web-devicons",
         },
         config = function()
-            require("nvim-tree").setup()
+            require("user/plugins/nvim-tree")
         end,
     },
 })

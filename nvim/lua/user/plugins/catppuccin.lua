@@ -1,4 +1,4 @@
 require("catppuccin").setup({
-        flavour = "macchiato",
-    })
+    flavour = "macchiato",
+})
 vim.cmd.colorscheme = "catppuccin"
