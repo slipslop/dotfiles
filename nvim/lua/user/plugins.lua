@@ -17,10 +17,7 @@ require("lazy").setup({
         name = "catppuccin",
         priority = 1000,
         config = function()
-            require("catppuccin").setup({
-                flavour = "macchiato",
-            })
-            vim.cmd.colorscheme = "catppuccin"
+            require("user/plugins/catppuccin")
         end,
     },
     "tpope/vim-commentary",
