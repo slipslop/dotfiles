@@ -59,4 +59,11 @@ require("lazy").setup({
             require("user/plugins/nvim-tree")
         end,
     },
+    {
+        "nvim-lualine/lualine.nvim",
+        dependencies = { "nvim-tree/nvim-web-devicons" },
+        config = function()
+            require("lualine").setup()
+        end,
+    },
 })
