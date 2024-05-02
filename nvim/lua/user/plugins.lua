@@ -65,7 +65,7 @@ require("lazy").setup({
         config = function()
             require("lualine").setup({
                 options = {
-                    theme='nightfly'
+                    theme="nightfly"
                 }
             })
         end,
