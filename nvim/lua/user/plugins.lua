@@ -1,3 +1,4 @@
+# load lazy.nvim - nvim packet manager
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
@@ -21,12 +22,11 @@ require("lazy").setup({
         end,
     },
     "tpope/vim-commentary",
-    "sheerun/vim-polyglot",
     "farmergreg/vim-lastplace",
     {
         'windwp/nvim-autopairs',
         event = "InsertEnter",
-        opts = {}
+        config = true
     },
     {
         "nvim-treesitter/nvim-treesitter",
@@ -39,7 +39,7 @@ require("lazy").setup({
     },
     {
         "nvim-telescope/telescope.nvim",
-        tag = "0.1.5",
+        branch = "0.1.x",
         dependencies = {
             "nvim-lua/plenary.nvim",
             "nvim-telescope/telescope-live-grep-args.nvim",
