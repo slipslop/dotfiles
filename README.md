@@ -1,4 +1,2 @@
-Make sure to install following programs:
-
-
-ripgrep
+Required:
+MesloLGL nerd font
