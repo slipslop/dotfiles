@@ -2,14 +2,22 @@
 
 DOTFILES=$(cd $(dirname "${BASH_SOURCE[0]}") && pwd)
 
+echo "dotfiles dir: $DOTFILES"
+
 rm -rf $HOME/.tmux.conf
 ln -s $DOTFILES/tmux/tmux.conf $HOME/.tmux.conf
+
+echo "symlinked .tmux.conf"
 
 rm -rf $HOME/.config/nvim
 ln -s $DOTFILES/nvim $HOME/.config/nvim
 
+echo "symlinked nvim config"
+
 rm -rf $HOME/.config/alacritty
 ln -s $DOTFILES/alacritty $HOME/.config/alacritty
+
+echo "symlinked alacritty config"
 
 mkdir -p $HOME/.local/bin
 
