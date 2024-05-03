@@ -10,7 +10,7 @@ size = 12
 family = "MesloLGL Nerd Font"
 
 [window]
-decorations = "none"
+decorations = "Buttonless"
 
 [window.padding]
 x = 4
