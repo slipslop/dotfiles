@@ -15,3 +15,8 @@ decorations = "Buttonless"
 [window.padding]
 x = 4
 y = 4
+
+# for macs that use zsh as default
+[shell]
+program = "/usr/local/bin/bash"
+args = ["-l"]
