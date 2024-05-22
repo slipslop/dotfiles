@@ -37,6 +37,9 @@ vim.opt.splitright = true
 vim.opt.scrolloff = 8
 vim.opt.sidescrolloff = 8
 
+vim.opt.hlsearch = true
+vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>") -- clear search highlights
+
 vim.opt.confirm = true
 
 vim.opt.undofile = true
