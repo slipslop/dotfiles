@@ -16,6 +16,9 @@ vim.opt.relativenumber = true
 vim.opt.title = true
 vim.opt.mouse = 'a'
 
+-- lualine shows mode
+vim.opt.showmode = false
+
 vim.opt.termguicolors = true
 
 vim.opt.spell = true
