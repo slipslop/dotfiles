@@ -70,4 +70,10 @@ require("lazy").setup({
             })
         end,
     },
+    {
+        "williamboman/mason.nvim",
+        config = function()
+            require("user/plugins/mason")
+        end,
+    },
 })
