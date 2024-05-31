@@ -19,3 +19,5 @@ keymap.set("n", "<C-k>", "<C-w>k", { desc = "Move to upper split" })
 keymap.set("n", "<C-j>", "<C-w>j", { desc = "Move to split below" })
 keymap.set("n", "<C-l>", "<C-w>l", { desc = "Move to split right" })
 keymap.set("n", "<C-h>", "<C-w>h", { desc = "Move to split left" })
+
+keymap.set("n", "<leader>e", "<cmd>25Lex<CR>", { desc = "Open/close netRW 25% width" })
