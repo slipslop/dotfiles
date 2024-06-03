@@ -92,4 +92,11 @@ require("lazy").setup({
             require("user/plugins/nvim-cmp")
         end,
     },
+    {
+      'stevearc/oil.nvim',
+      dependencies = { "nvim-tree/nvim-web-devicons" },
+      config = function ()
+        require("user/plugins/oil")
+      end,
+    },
 })
