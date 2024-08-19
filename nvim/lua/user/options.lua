@@ -1,5 +1,7 @@
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
+vim.g.netrw_banner = 0
+vim.g.netrw_browse_split = 4
+vim.g.netrw_altv = 1
+vim.g.netrw_liststyle = 3
 
 vim.opt.expandtab = true
 vim.opt.shiftwidth = 4
@@ -15,9 +17,6 @@ vim.opt.relativenumber = true
 
 vim.opt.title = true
 vim.opt.mouse = 'a'
-
--- lualine shows mode
-vim.opt.showmode = false
 
 vim.opt.termguicolors = true
 
@@ -38,7 +37,7 @@ vim.opt.scrolloff = 8
 vim.opt.sidescrolloff = 8
 
 vim.opt.hlsearch = true
-vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>") -- clear search highlights
+vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
 vim.opt.confirm = true
 
