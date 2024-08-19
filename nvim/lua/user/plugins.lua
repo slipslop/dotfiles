@@ -24,11 +24,6 @@ require("lazy").setup({
     "tpope/vim-commentary",
     "farmergreg/vim-lastplace",
     {
-        'windwp/nvim-autopairs',
-        event = "InsertEnter",
-        config = true
-    },
-    {
         "nvim-treesitter/nvim-treesitter",
         config = function()
                require("user/plugins/treesitter");
@@ -48,17 +43,6 @@ require("lazy").setup({
         },
         config = function()
             require("user/plugins/telescope")
-        end,
-    },
-    {
-        "nvim-lualine/lualine.nvim",
-        dependencies = { "nvim-tree/nvim-web-devicons" },
-        config = function()
-            require("lualine").setup({
-                options = {
-                    theme="nightfly"
-                }
-            })
         end,
     },
     {
@@ -91,12 +75,5 @@ require("lazy").setup({
         config = function()
             require("user/plugins/nvim-cmp")
         end,
-    },
-    {
-      'stevearc/oil.nvim',
-      dependencies = { "nvim-tree/nvim-web-devicons" },
-      config = function ()
-        require("user/plugins/oil")
-      end,
     },
 })
