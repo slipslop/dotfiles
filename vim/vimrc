@@ -62,7 +62,7 @@ augroup END
 
 syntax on
 
-set path+=**
+" set path+=** TODO: remove if unnecessary
 set wildmenu
 set clipboard=unnamed
 set expandtab
@@ -75,6 +75,11 @@ set relativenumber
 " Display extra whitespace
 set list
 set listchars=tab:»·,trail:·
+
+set backupdir=$HOME/.vim/tmp
+set directory=$HOME/.vim/tmp " Don't clutter my dirs up with swp and tmp files
+set undodir=$HOME/.vim/undo
+set undofile
 
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 nmap k gk
