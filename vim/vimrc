@@ -26,6 +26,13 @@ if executable('intelephense')
         \		lsp#utils#get_buffer_path(),
         \		['.git/']
         \	))},
+        \ 'workspace_config': {
+        \   'intelephense': {
+        \       'environment': {
+        \           'phpVersion': "8.2",
+        \       },
+        \   },
+        \ },
         \})
 endif
 
