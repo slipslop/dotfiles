@@ -16,11 +16,10 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 if executable('intelephense')
-    " pip install python-lsp-server
     au User lsp_setup call lsp#register_server({
         \ 'name': 'intelephense',
         \ 'cmd': {server_info->['intelephense', '--stdio']},
-        \ 'allowlist': ['php'],
+        \ 'allowlist': ['php', 'phtml'],
         \ 'root_uri': {server_info->lsp#utils#path_to_uri(
         \	lsp#utils#find_nearest_parent_file_directory(
         \		lsp#utils#get_buffer_path(),
