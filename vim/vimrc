@@ -74,12 +74,14 @@ set relativenumber
 " Display extra whitespace
 set list
 set listchars=tab:»·,trail:·
+set showcmd
 
 set backupdir=$HOME/.vim/tmp
 set directory=$HOME/.vim/tmp " Don't clutter my dirs up with swp and tmp files
 set undodir=$HOME/.vim/undo
 set undofile
 
+let mapleader=","
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 nmap k gk
 nmap j gj
